@@ -5,7 +5,7 @@ var path = require("path");
 exports.convert = function(oPath){
     var oPathObj = path.parse(oPath),
         odir = oPathObj.dir,
-        basename = oPathObj.base;
+        basename = oPathObj.base,
         tdir = odir.replace("static","_static");
 
 
